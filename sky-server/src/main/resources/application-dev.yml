@@ -8,6 +8,6 @@ sky:
     password: 1776463307
   alioss:
     endpoint: oss-cn-wuhan-lr.aliyuncs.com
-    access-key-id: LTAI5tQH4sVRkuy6eYqBiSch
-    access-key-secret: 1P1AKRNojkC38TgKYxmgGhPy2K79RK
+    access-key-id:
+    access-key-secret:
     bucket-name: hrt-sky-take-out
