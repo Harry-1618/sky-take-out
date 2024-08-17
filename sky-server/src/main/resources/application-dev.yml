@@ -11,3 +11,8 @@ sky:
     access-key-id:
     access-key-secret:
     bucket-name: hrt-sky
+  redis:
+    host: localhost
+    password: 123456
+    port: 6379
+    database: 10
