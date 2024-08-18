@@ -1,5 +1,6 @@
 package com.sky.controller.user;
 
+import com.sky.dto.ShoppingCartDTO;
 import com.sky.result.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -38,4 +39,5 @@ public class ShopController {
         log.info("获取店铺营业状态:{}",shopStatus==1?"营业中":"打烊中");
         return Result.success(shopStatus);
     }
+
 }
