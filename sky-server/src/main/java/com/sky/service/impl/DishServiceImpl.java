@@ -116,6 +116,7 @@ public class DishServiceImpl implements DishService {
      * @return
      */
     @Override
+    @Transactional
     public DishVO getByIdWithFlavor(Long id) {
         Dish dish = dishMapper.getById(id);
         List<DishFlavor> dishFlavors = dishFlavorMapper.getByDishId(id);
@@ -131,6 +132,7 @@ public class DishServiceImpl implements DishService {
      * @param dishDTO
      */
     @Override
+    @Transactional
     public void updateWithFlavor(DishDTO dishDTO) {
         Dish dish = new Dish();
         BeanUtils.copyProperties(dishDTO, dish);
@@ -178,6 +180,7 @@ public class DishServiceImpl implements DishService {
      * @param dish
      * @return
      */
+    @Transactional
     public List<DishVO> listWithFlavor(Dish dish) {
         List<Dish> dishList = dishMapper.list(dish);
 
